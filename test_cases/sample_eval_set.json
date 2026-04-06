@@ -1,0 +1,24 @@
+{
+  "latency_tests": [
+    {
+      "text": "Hello, how can I help you?",
+      "api_key": "test_key",
+      "threshold_ms": 500
+    }
+  ],
+  "accuracy_tests": [
+    {
+      "predicted": "The product costs twenty five dollars",
+      "expected": "The product costs $25"
+    }
+  ],
+  "turn_tests": [
+    {
+      "dialogue": [
+        {"role": "user", "text": "My name is John"},
+        {"role": "agent", "text": "Nice to meet you, John"}
+      ],
+      "expected_context": ["John", "name"]
+    }
+  ]
+}
